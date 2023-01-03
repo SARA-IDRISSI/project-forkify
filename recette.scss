@@ -1,0 +1,44 @@
+* {
+  
+
+}
+
+
+
+
+
+
+    img {
+        grid-area: logo;
+
+    }
+
+    form {
+        grid-area: form;
+        background-color: blue;
+
+    }
+
+    .nav {
+        grid-area: nav;
+        background-color: green;
+    }
+
+    .part-result {
+        grid-area: cont;
+        background-color: pink;
+    }
+
+
+
+
+
+    .ingredient {
+        grid-area: side;
+        background-color: gray;
+    }
+}
+
+
+
+}

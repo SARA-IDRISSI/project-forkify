@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>Recettes</title>
+</head>
+
+<body>
+    <!------------------------------------------- NAV -------------------------------------------->
+    <div class="content">
+
+
+
+        <div class="headr">
+            <img src="img/logo.png" alt="">
+            <form id="form" class="formm">
+                <input type="search" class="input-form" name="" id="form-input"
+                    placeholder="Search over 1,000,000 recipes">
+                <button type="submit" class="btn-header" id="form-btn"> <i class="fa-solid fa-magnifying-glass"></i>
+                    SEARCH</button>
+            </form>
+            <div class="nav">
+                <ul>
+                    <!-- ici -->
+                    <!-- Link to open the modal -->
+
+                    <a href="#ex1" rel="modal:open" class="bg-addd"> <i class="fa-regular fa-pen-to-square"></i>
+                        ADD RECIPE</a>
+
+                    <!-- <li>
+
+                    <a href="">
+                        <i class="fa-regular fa-pen-to-square"></i> ADD RECIPE
+
+                    </a>
+                </li> -->
+                    <!-------------------------------------- fin modal ---------------------------------------------------------------->
+
+                    <li class="li-bookmark">
+                        <a href="" class="a-bookmark">
+                            <i class="fa-regular fa-bookmark"></i> BOOKMARKS
+
+                        </a>
+                    </li>
+                    <div class="hover-bookmark">
+                        <span class="msg-empty"> <i class="fa-solid fa-triangle-exclamation"></i>No bookmarks yet.
+                            Find
+                            a
+                            nice recipe and bookmark it </span>
+                    </div>
+                </ul>
+
+            </div>
+        </div>
+        <!---------------------------------------------PART RESULT ---------------------------------------->
+
+        <div class="recipes">
+            <div class="part-result">
+                <div class="loader" style="display: none;"></div>
+
+                <div class="error" style="display: none;"> <i class="fa-solid fa-triangle-exclamation"></i> No recipes
+                    found for your query! Please try again.</div>
+                <div class="results">
+
+                </div>
+                <div class="pagination">
+                </div>
+                <!-- footer -->
+                <div class="footer">
+                    <p> &copy; Copyright by <i> SARAH IDRISSI </i>. Use for learning or your portfolio. Don't use to
+                        teach.
+                        Don't
+                        claim
+                        as your own.</p>
+                </div>
+            </div>
+            <!--------------------------------------------- INGREDIENT -------------------------------------------------->
+            <div class="ingredient">
+                <div class="loader-ing" style="display: none;"></div>
+
+                <!-- imgg de recette -->
+                <!-- <div class="titl-img-recette">
+                    <img src="img/pizza.jpeg" alt="" class="img-ingr">
+
+                    <p class="small-titl one">BEST PIZZA DOUGH</p>
+                    <p class="small-titl two">EVER</p>
+                </div> -->
+
+                <!-- mesg- of starting  -->
+                <div class="start">
+                    <p> <i class="fa-regular fa-face-smile"></i>
+                        Start by searching for a recipe or an ingredient. Have fun!</p>
+                </div>
+
+                <!-- part one of ingredient -->
+                <!-- <div class="sous-img">
+                    <div class="nav1">
+                        <span class="clock">
+                            <i class="fa-regular fa-clock"></i>
+                            <strong>UNKOWN</strong> MINUTES
+                        </span>
+                    </div>
+                    <div class="nav2">
+                        <span class="clock">
+                            <i class="fa-solid fa-user-group"></i> SERVINGS </span>
+                        <button class="plus"><i class="fa-solid fa-plus"></i></button>
+                        <button class="plus"><i class="fa-solid fa-minus"></i></button>
+                    </div>
+                    <div class="nav3"></div>
+                    <div class="nav4">
+                        <button><i class="fa-regular fa-bookmark"></i></button
+                            >
+                    </div>
+                </div>
+                <div class="recipe-ingr">
+                    <h2>RECIPE INGREDIENTS</h2>
+                    <div class="tab-ing center">
+                        <div class="col1">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <div class="col2">
+
+                            <i class="fa-solid fa-check"></i>
+
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="how-cook">
+                    <h2>HOW TO COOK IT</h2>
+                    <p>This recipe was carefully designed and tested by <strong class="cook"></strong>. Please check out
+                        directions at
+                        their website.</p>
+
+                    <a class="direction">DIRECTIONS <i class="fa-solid fa-arrow-right"></i> </a>
+
+                </div>-->
+
+
+            </div>
+
+        </div>
+    </div>
+    <!-- Modal HTML embedded directly into document -->
+    <div id="ex1" class="modal">
+        <div class="big-box center-box">
+            <div class="left">
+
+
+                <h2>RECIPE DATA</h2>
+                <div class="ligne1">
+                    <label for="">Title</label>
+                    <input type="text" name="" id="">
+
+                </div>
+                <div class="ligne1">
+                    <label for="">URL</label>
+                    <input type="text" name="" id="">
+
+                </div>
+                <div class="ligne1">
+                    <label for="">Image URL</label>
+                    <input type="text" name="" id="">
+
+                </div>
+                <div class="ligne1">
+                    <label for="">Publisher</label>
+                    <input type="text" name="" id="">
+
+                </div>
+                <div class="ligne1">
+                    <label for="">Prep time</label>
+                    <input type="text" name="" id="">
+
+                </div>
+                <div class="ligne1">
+                    <label for="">Servings</label>
+                    <input type="text" name="" id="">
+
+                </div>
+            </div>
+            <!-- right -->
+            <div class="left">
+
+
+                <h2>INGREDIENTS</h2>
+                <div class="ligne1">
+                    <label for="">Ingredient 1</label>
+                    <input type="text" name="" id="">
+
+                </div>
+                <div class="ligne1">
+                    <label for="">Ingredient 2</label>
+                    <input type="text" name="" id="">
+
+                </div>
+                <div class="ligne1">
+                    <label for="">Ingredient 3</label>
+                    <input type="text" name="" id="">
+
+                </div>
+                <div class="ligne1">
+                    <label for="">Ingredient 4</label>
+                    <input type="text" name="" id="">
+
+                </div>
+                <div class="ligne1">
+                    <label for="">Ingredient 5</label>
+                    <input type="text" name="" id="">
+
+                </div>
+                <div class="ligne1">
+                    <label for="">Ingredient 6</label>
+                    <input type="text" name="" id="">
+
+                </div>
+            </div>
+
+
+        </div>
+        <div class="button">
+            <button><i class="fa-solid fa-cloud-arrow-up"></i> UPLOAD</button>
+
+        </div>
+    </div>
+
+
+
+    </div>
+
+
+    <!---------------------------------------------- links script -------------------------------------->
+    <script src="https://kit.fontawesome.com/552b1297ac.js" crossorigin="anonymous"></script>
+
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js">
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+    <script src="recette.js"></script>
+</body>
+
+</html>

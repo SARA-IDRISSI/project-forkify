@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+* .content {
+  width: 70%;
+  margin: auto;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 20% auto;
+  grid-template-areas: "logo logo logo  form form form form nav nav nav" "side side side cont cont cont cont cont cont cont ";
+}
+* .content img {
+  grid-area: logo;
+}
+* .content form {
+  grid-area: form;
+  background-color: blue;
+}
+* .content .nav {
+  grid-area: nav;
+  background-color: green;
+}
+* .content .part-result {
+  grid-area: cont;
+  background-color: pink;
+}
+* .content .ingredient {
+  grid-area: side;
+  background-color: gray;
+}/*# sourceMappingURL=recette.css.map */
